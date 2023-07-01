@@ -1,0 +1,16 @@
+{
+  "users": [
+    {
+      "email": "user@test.com",
+      "password": "$2a$10$u1IF0emTIKDdgm6rtxR50uML4pipV2WJh.j0TVgaFWisI768fR.JK",
+      "username": "testUser",
+      "id": 1
+    },
+    {
+      "email": "coolmodipo@test.com",
+      "password": "$2a$10$I9G4cperppL1/lRv7ZBOiuFRa6cqd6sfWREJFzTIyQBOvVHlbn8DG",
+      "username": "coolmodipo",
+      "id": 2
+    }
+  ]
+}
