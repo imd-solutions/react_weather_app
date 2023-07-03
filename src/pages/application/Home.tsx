@@ -28,7 +28,7 @@ export default function Home() {
 
   const saveLocation = (location: string) =>
     getLocation(location).then((resp) => {
-      if (resp.data) {
+      if (resp.data.length > 0) {
         alert("Location already saved.");
         return;
       }

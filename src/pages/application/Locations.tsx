@@ -83,7 +83,7 @@ export default function Locations() {
                           </div>
                         </li>
                       ))
-                    : ""}
+                    : "There are no saved locations."}
                 </ul>
               </div>
             </div>

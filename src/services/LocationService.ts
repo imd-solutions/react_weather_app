@@ -1,9 +1,7 @@
 import { postRequest, getRequest } from "./ApiService";
 
 export function addNewLocation(location: string) {
-  let userId = localStorage.getItem("authUser")
-    ? JSON.parse(localStorage.getItem("authUser") || "{}").user.id
-    : null;
+  const userId = JSON.parse(localStorage.getItem("authUser") || "{}").user.id;
 
   const payload = {
     user_id: userId,
@@ -13,9 +11,7 @@ export function addNewLocation(location: string) {
 }
 
 export function getLocations() {
-  let userId = localStorage.getItem("authUser")
-    ? JSON.parse(localStorage.getItem("authUser") || "{}").user.id
-    : null;
+  const userId = JSON.parse(localStorage.getItem("authUser") || "{}").user.id;
 
   return getRequest(`locations?user_id=${userId}`).then(
     (response: any) => response
@@ -23,10 +19,7 @@ export function getLocations() {
 }
 
 export function getLocation(location: string) {
-  let userId = localStorage.getItem("authUser")
-    ? JSON.parse(localStorage.getItem("authUser") || "{}").user.id
-    : null;
-
+  const userId = JSON.parse(localStorage.getItem("authUser") || "{}").user.id;
   return getRequest(`locations?user_id=${userId}&title=${location}`).then(
     (response: any) => response
   );

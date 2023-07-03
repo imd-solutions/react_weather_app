@@ -5,45 +5,7 @@
       "password": "$2a$10$u1IF0emTIKDdgm6rtxR50uML4pipV2WJh.j0TVgaFWisI768fR.JK",
       "username": "testUser",
       "id": 1
-    },
-    {
-      "email": "coolmodipo@test.com",
-      "password": "$2a$10$I9G4cperppL1/lRv7ZBOiuFRa6cqd6sfWREJFzTIyQBOvVHlbn8DG",
-      "username": "coolmodipo",
-      "id": 2
-    },
-    {
-      "email": "usehjr@test.com",
-      "password": "$2a$10$Zp5uSJeBd6HZpV0g16PP4ejb8y5bYNmyo3MzqjWiSlEs7CAG9G3Wu",
-      "username": "testUser",
-      "id": 3
     }
   ],
-  "locations": [
-    {
-      "title": "Leighton Buzzard",
-      "user_id": 2,
-      "id": 1
-    },
-    {
-      "user_id": 2,
-      "title": "LIverpool",
-      "id": 2
-    },
-    {
-      "user_id": 2,
-      "title": "London",
-      "id": 3
-    },
-    {
-      "user_id": 1,
-      "title": "London",
-      "id": 4
-    },
-    {
-      "user_id": 1,
-      "title": "Lisbon",
-      "id": 5
-    }
-  ]
+  "locations": []
 }
