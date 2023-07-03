@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { getRequest } from "../utils/AxiosService";
+import { getRequest } from "./../services/ApiService";
 
 const useFetch = (endpoint: string, query: any) => {
   const [data, setData] = useState<any>();
@@ -10,7 +10,11 @@ const useFetch = (endpoint: string, query: any) => {
     setIsLoading(true);
 
     try {
-      const response = await getRequest(endpoint, query);
+      const response = await getRequest(
+        endpoint,
+        query,
+        "https://weatherapi-com.p.rapidapi.com/"
+      );
       setData(response.data);
       setIsLoading(false);
     } catch (error: any) {

@@ -5,7 +5,7 @@ import PartialHeader from "../../components/partials/Header";
 import PartialFooter from "../../components/partials/Footer";
 import EventButton from "../../components/event/EventButton";
 import { icons } from "../../constants";
-import { userLogIn } from "../../utils/AxiosService";
+import { userLogIn } from "./../../services/UserService";
 import { useNavigate } from "react-router-dom";
 import { validateValues } from "../../helpers/validation";
 
